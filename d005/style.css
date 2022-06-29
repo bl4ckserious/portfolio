@@ -1,0 +1,161 @@
+@charset "UTF-8"
+
+:root {
+    --yellow: #FFF587;
+    --orange: #FF8C64;
+    --red: #FF665A;
+    --hardblue: #7D6B7D;
+    --gray1: #A3A1A8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    font-family:'Times New Roman', Times, serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    background-color: #A3A1A8;
+    background-size: 100%;
+    flex-direction: column;
+}
+
+
+/* MAIN */
+main{
+    width:54.9048% /* 750px / 1366px */;
+    background-color: #ff8b64;
+    margin: 40px auto;
+    padding: 15px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
+}
+
+main h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+main h3 {
+    margin-top: 25px;
+    padding: 10px;
+
+}
+
+
+/* FOTO PRINCIPAL */
+.profile-pic {
+    display: block;
+    margin: auto;
+}
+
+/* PARÁGRAFOS */
+
+.paragraph {
+    text-align: justify;
+    text-indent: 4.0625em; /* 65px / 16px */
+    line-height: 1.5625em;/*25px / 16px */
+    font-size: 1.125em ;/* 18px / 16px */
+    margin-top: 3.5714%; /* 25px / 700px */
+}
+
+
+/* REDES SOCIAIS */
+
+.social-content {
+    background-color: #FFF587;
+    margin: 0px -15px -15px -15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 30px;
+
+}
+
+.icon-social-medias::before{
+    line-height: 60px;
+}
+
+.icon-social-medias {
+    box-sizing: border-box;
+
+    font-size: 2em;
+    border: 1px solid #A3A1A8;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+
+    text-align: center;
+    color: #A3A1A8;
+    transition: background-color, color, .2s ease-in-out;
+}
+
+.icon-social-medias:hover {
+    background-color: #A3A1A8;
+    color: white;
+    ;
+}
+
+/* RODAPE */
+
+footer {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: #807f85;
+    padding: 5px
+}
+
+footer p {
+    line-height: 1.5625em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* VERSÃO MOBILE */
+
+@media screen and (max-width: 700px) {
+    main {
+        width: 90%;
+        height: 100%;
+        margin-top: 4%;
+    }
+
+    .paragraph {
+        text-indent: 30px;
+    }
+
+    .paragraph-second {
+        padding: 10px;
+        text-indent: 30px;
+    }
+
+    footer {
+        background-color: transparent;
+    }
+}
+
+@media screen and (mix-width: 860px) {
+    main {
+        width: 54.9048%;
+    }
+}
+
+
+

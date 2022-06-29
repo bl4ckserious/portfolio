@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/favicon1.ico" type="image/x-icon">
+        <title>Meu Portfólio</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontes/icofont/icofont/icofont.min.css">
+
+
+        <script src="https://kit.fontawesome.com/5f9818ea38.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>  
+        <div class="container">
+            <img src="img/Humaaans - Space (1).png" alt="Representação em desenho do criador do site" class="icon">
+            <label for="menu" class="menu">
+                <i class="icofont-navigation-menu"></i>
+            </label>
+            <input type="checkbox" name="menu" id="menu">
+            <header class="header">
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- CAIXA DE APRESENTAÇÃO -->
+            <div class="box-apresentation" id="about">
+                
+                <img class="profile-pic" src="img/my-profile250.1.png" alt="Foto de frente do criador desse portfólio, em preto e branco">
+
+                <h1>Sobre mim:</h1>
+                <div id="about-me">
+                    <p class="p1">Olá! Me chamo Luccas, tenho 23 anos e atualmente estou no primeiro ano de Ciência da Computação. Sou apaixonado por ciências e tecnologia e trabalho com desenvolvimento Front-End.</p>
+                    <p class="p2">Seja bem-vindo(a)! :)</p>
+                    
+                    <div class="location">
+                        <a href="#">
+                            <i class="icofont-location-pin"></i>
+                            <h2>São Paulo, Brasil</h2>
+                        </a>
+                    </div>
+                    <p class="description">Desenvolvedor Front-End</p>
+                </div>
+            </div>
+
+            <!-- PORTFÓLIO -->
+            <div class="portfolio-content" id="work">
+                <h1>Portfólio</h1>
+                <ul class="portfolio-list">
+                    <li class="portfolio-items impar">
+                            <h2 class="text2">Projeto: Cartão de Apresentação</h2>
+                            <p class="postfolio-description">Esboço de um possível cartão de apresentação que desenvolvi durante o curso HTML5 e CSS3 do curso em vídeo.</p>
+
+                            <a href="d005/cartao-apresentacao.html">Acesse aqui...</a>
+                    </li>
+                    <li class="portfolio-items par">
+                            <h2>Projeto: Site Responsivo</h2>
+                            <p class="postfolio-description">Projeto inicial de um site que conta a história do surgimento do mascote Android.</p>
+                            
+                            <a href="primeiro-site/android.html">Acesse aqui...</a>                     
+                    </li>
+                    <li class="portfolio-items  impar">
+                            <h2>Projeto: Login</h2>
+                            <p class="postfolio-description">Uma página inicial interativa para realização de login.</p>
+
+                            <a href="formulario/formulario.html" target="_self" rel="internal">Acesse aqui...</a>
+                    </li>
+                    <li class="portfolio-items par">
+                        <h2>Projeto: Moon Light</h2>
+                        <p class="postfolio-description">Página com tema Luz Lunar, interativa e responsiva.</p>
+
+                        <a href="moon-light/moon-light.html" target="_self" rel="internal">Acesse aqui...</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact" id="contact">
+                <h1>Contato</h1>
+                <div class="info">
+
+                    <p>Para mais informações entre em contato comigo pelo WhatsApp ou Email. Veja também minhas redes socias ;)</p>
+                    <ul class="social-medias">
+                        <a href="https://github.com/bl4ckserious" target="_blank">
+                            <li class="items-social-media">
+                                <i class="fab fa-github"></i>
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luccas-fontes/" target="_blank">
+                            <li class="items-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                        <a href="https://www.instagram.com/ltfontex/" target="_blank" rel="external">
+                            <li class="items-social-media">
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5511994247862&text=Oi%2C%20Lucca!%20%3A)" target="_blank">
+                            <li class="items-social-media">
+                                <i class="fab fa-whatsapp"></i>
+                            </li>
+                        </a>
+                    </ul>
+                    <p>Email: <span>luccastorres_ac@hotmail.com</span></p>
+                </div>
+            </div>
+
+            <footer>
+                <p class="copyright">&copy; 2021 Luccas Torres</p>
+            </footer>
+
+        </div>
+
+        <script>
+            function typeWriter(element) {
+                const textArray = element.innerHTML.split('');
+                element.innerHTML = '';
+                textArray.forEach((letter, i) => {
+                    setTimeout(() => element.innerHTML += letter, 200 * i)
+                })
+            }
+            const something = document.querySelector('.p2');
+            typeWriter(something)
+        </script>
+    </body>
+</html>

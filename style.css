@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+:root {
+    --hardBlue: #212185;
+    --purple: #B768DF;
+    --pink: #FFB4FF;
+    --lightBlue: #2E77D5;
+    --generalFont:  'Poppins', sans-serif;
+    --handWritting: 'Sacramento', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 15%;
+    font-family: var(--generalFont);
+}
+
+body {
+    position: relative;
+    background-image: url('img/bg1.1.jpg');
+    background-blend-mode: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--hardBlue);
+}
+
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: -4%;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+}
+
+input, label {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #212185b0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+header .nav-bar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+header .nav-bar ul li {
+    margin-left: 30px;
+}
+
+header .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    transition: all, .3s ease-in-out;
+}
+
+header .nav-bar ul li a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: var(--hardBlue);
+}
+
+
+/*BOX DE APRESENTAÇÃO*/
+
+.box-apresentation {
+    background: linear-gradient(45deg, var(--purple), transparent);
+    width: 40%;
+    margin: 10% 10% 0 40%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.box-apresentation .profile-pic {
+    border: 4px solid var(--pink);
+    border-radius: 50%;
+    width: 120px;
+    right: 5%;
+    margin-top: -1%;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-apresentation h1 {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.box-apresentation #about-me  {
+    margin-top: 15%;
+    color: #fff;
+    text-align: justify;
+    width: 70%;
+    line-height: 2rem;
+}
+
+.p1 {
+    text-align: justify;
+}
+
+.p2 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: var(--pink);
+    font-family: var(--handWritting);
+}
+
+.p2::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+.location a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin: 2rem 0;
+}
+
+.location a i {
+    font-size: 1.5em;
+    color: red;
+    text-shadow: 0px 8px 2px rgba(0, 0, 0, 0.226);;
+}
+
+.location a h2 {
+    font-weight: 300;
+}
+
+/*CONTEÚDO DO PORTFÓLIO*/
+
+.portfolio-content {
+    margin: 10% 0;
+    padding: 20px;
+    position: relative
+}
+
+.portfolio-content h1, .contact h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.portfolio-content ul {
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.portfolio-content ul li {
+    margin: 5% 0;
+    padding: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.507);
+    border-radius: 40px;
+}
+
+.portfolio-content ul li h2 {
+    color: #212185;
+    letter-spacing: 2px;
+    margin-bottom: 2em
+}
+
+.portfolio-content ul li p {
+    color: white;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.portfolio-content ul li a {
+    font-weight: 500;
+    text-decoration: overline;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.portfolio-content ul li a:hover {
+    color: var(--hardBlue)
+}
+ 
+.par {
+    background: #ffb4ffe3;
+    width: 60%;
+}
+
+.par a {
+    color: #733691
+}
+
+.impar {
+    background: #b768dfe3;
+    width: 60%;
+    transform: translateX(50%)
+}
+
+.impar a {
+    color:#733691;
+}
+
+/*CONTATO*/
+.contact {
+    margin-top: 15%;
+    width: 50%;
+    margin: auto;
+}
+
+.contact .info {
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact p {
+    width: 300px;
+    margin: auto;
+    color: #000;
+    background-color: rgb(255, 255, 255) ;
+    padding: 5px;
+}
+
+.social-medias {
+    justify-content: center;
+    margin: 5% auto;
+    list-style: none;
+    display: flex;
+}
+
+.social-medias a {
+    align-items: space-around;
+    margin-right: 1rem;
+    color: #000;
+}
+
+.social-medias a:hover {
+    color:var(--pink)
+}
+
+.social-medias i {
+    font-size: 2em;
+}
+
+
+/*FOOTER*/
+
+footer {
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+/*MOBILE VERSION*/ 
+
+@media screen and (max-width: 699px){
+    body {
+        background-attachment: initial;
+        background-size: contain;
+    }
+
+    header {
+
+    }
+
+    .box-apresentation {
+        width: 95%;
+        margin: auto;
+        margin-top: 25%;
+        padding-top: 0;
+    }
+
+    .box-apresentation .profile-pic {
+        z-index: -1;
+        top: 3%;
+        right: 5px;
+    }
+
+    .box-apresentation #about-me {
+        width: 100%;
+    }
+
+    .box-apresentation .p1 {
+        margin-top: 50%;
+        width: 100%;
+        word-spacing: 5px;
+    }
+
+    .portfolio-content {
+        padding: 0;
+    }
+
+    .portfolio-content h1 {
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .portfolio-list {
+        width: 100%;
+    }
+
+    .portfolio-content ul li  {
+        margin: 20% 0;
+    }
+
+    .par, .impar {
+        transform: none;
+        margin: auto;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .icon {
+        top: 100vh;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .box-apresentation {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    label {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    label i {
+        font-size: 2em;
+    }
+
+    header {
+        display: flex;
+        box-shadow: none;
+        background: transparent;
+        
+    }
+
+    .nav-bar ul { /*teste*/
+        position: relative;
+        left: -100%;
+        top: 45vh;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 100vh;
+        background: #212185cc;
+        box-shadow: 3px 3px 7px rgb(0 0 0 / 71%);
+        color: #212185;
+        justify-content: space-around;
+        align-items: center;
+        transition: all .5s ease-in-out;
+    }
+
+    input[type="checkbox"]:checked + header .nav-bar ul {
+        transform: translateX(100%);
+    }
+
+   
+}
+
+/*ANIMATION*/
+@keyframes blink {
+    0, 100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
